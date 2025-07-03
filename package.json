@@ -20,8 +20,8 @@
     "lintfix": "npm run eslint -- --fix",
     "test": "jest",
     "posttest": "npm run lint",
-    "test-all": "npm run test -ws -iwr --if-present",
-    "lint-all": "npm run lint -ws -iwr --if-present",
+    "test-all": "npm run test --workspaces --include-workspace-root --if-present",
+    "lint-all": "npm run lint --workspaces --include-workspace-root --if-present",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "eslint": "eslint \"**/*.{js,cjs,ts,mjs,jsx,tsx}\""
@@ -73,11 +73,11 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@github/prettier-config": "^0.0.6",
     "@npmcli/eslint-config": "^5.0.0",
-    "@npmcli/template-oss": "4.24.3",
+    "@npmcli/template-oss": "4.24.4",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^16.0.0",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^30.0.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^10.0.2",
     "eslint-config-react-app": "^7.0.1",
@@ -95,8 +95,8 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
     "prettier": "^3.1.1"
   },
   "author": "GitHub Inc.",
@@ -105,7 +105,7 @@
   },
   "templateOSS": {
     "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
-    "version": "4.24.3",
+    "version": "4.24.4",
     "content": "./scripts/template-oss",
     "allowPaths": [
       "cli-cache.json"
